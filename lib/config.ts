@@ -23,7 +23,7 @@ export const siteConfig = {
   ],
   contact: {
     email: "sales@lampsplusdisplay.com",
-    phone: "+91 73567 80866",
+    phone: "+971 56 544 4762, +971 56 142 5339",
     whatsapp: "+971 56 142 5339",
     address: "Alquoz industrial area 3 Near Audi Showroom Dubai",
   },

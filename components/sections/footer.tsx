@@ -1,5 +1,5 @@
 
-import { Phone, Linkedin, Instagram, Facebook } from "lucide-react"
+import { Phone, Instagram, Facebook } from "lucide-react"
 
 const products = [
   { label: "LED Displays", href: "/?category=led-displays#products" },
@@ -30,9 +30,8 @@ const company = [
 ]
 
 const socials = [
-  { icon: Linkedin, href: "https://www.linkedin.com/company/aztechled", label: "LinkedIn" },
-  { icon: Instagram, href: "https://www.instagram.com/aztechled", label: "Instagram" },
-  { icon: Facebook, href: "https://www.facebook.com/aztechled", label: "Facebook" },
+  { icon: Instagram, href: "https://www.instagram.com/lampsplusled?igsh=N2hwZXk2eXQxeTJp", label: "Instagram" },
+  { icon: Facebook, href: "https://www.facebook.com/share/1FhP4SUuuN/", label: "Facebook" },
 ]
 
 export function Footer() {

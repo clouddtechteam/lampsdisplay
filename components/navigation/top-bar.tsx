@@ -36,11 +36,11 @@ export function TopBar() {
         
         <div className="flex items-center gap-3 text-[0.75rem] ml-auto md:ml-0">
           <a 
-            href="tel:+917356780866" 
+            href="tel:+971565444762" 
             className="flex items-center gap-1.5 hover:opacity-80 transition-opacity"
           >
             <Phone className="w-3.5 h-3.5" aria-hidden="true" />
-            <span className="hidden sm:inline">+91 73567 80866</span>
+            <span className="hidden sm:inline">+971 56 544 4762, +971 56 142 5339</span>
           </a>
           
           <span className="hidden sm:inline text-white/50">|</span>
