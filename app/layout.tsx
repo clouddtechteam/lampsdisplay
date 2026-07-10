@@ -74,6 +74,11 @@ export const metadata: Metadata = {
   formatDetection: {
     telephone: true,
   },
+  icons: {
+    icon: '/icon.svg',
+    shortcut: '/icon.svg',
+    apple: '/icon.svg',
+  },
 }
 
 export const viewport: Viewport = {
