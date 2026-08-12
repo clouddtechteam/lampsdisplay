@@ -18,6 +18,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const BASE = 'https://aztechledscreens.com'
 
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.metaDescription,
+    image: `${BASE}${post.image}`,
+    author: {
+      '@type': 'Organization',
+      name: post.author,
+      url: BASE,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Lamps plus',
+      logo: {
+        '@type': 'ImageObject',
+        url: `${BASE}/images/hero_led_wall_1774782256673.png`,
+      },
+    },
+    datePublished: post.dateISO,
+    dateModified: post.dateISO,
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `${BASE}/blog/${post.slug}`,
+    },
+  }
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: BASE },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: `${BASE}/#blog` },
+      { '@type': 'ListItem', position: 3, name: post.title, item: `${BASE}/blog/${post.slug}` },
+    ],
+  }
+
   return {
     title: post.metaTitle,
     description: post.metaDescription,
@@ -51,6 +88,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `${BASE}/blog/${post.slug}`,
     },
+    other: {
+      'script:ld+json:article': JSON.stringify(articleSchema),
+      'script:ld+json:breadcrumb': JSON.stringify(breadcrumbSchema),
+    },
   }
 }
 
@@ -59,58 +100,5 @@ export default async function BlogPostPage({ params }: Props) {
   const post = getBlogPost(slug)
   if (!post) notFound()
 
-  const BASE = 'https://aztechledscreens.com'
-
-  // JSON-LD Article schema
-  const articleSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: post.title,
-    description: post.metaDescription,
-    image: `${BASE}${post.image}`,
-    author: {
-      '@type': 'Organization',
-      name: post.author,
-      url: BASE,
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: 'Lamps plus',
-      logo: {
-        '@type': 'ImageObject',
-        url: `${BASE}/images/hero_led_wall_1774782256673.png`,
-      },
-    },
-    datePublished: post.dateISO,
-    dateModified: post.dateISO,
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': `${BASE}/blog/${post.slug}`,
-    },
-  }
-
-  // BreadcrumbList schema
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: BASE },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: `${BASE}/#blog` },
-      { '@type': 'ListItem', position: 3, name: post.title, item: `${BASE}/blog/${post.slug}` },
-    ],
-  }
-
-  return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <BlogArticlePage post={post} />
-    </>
-  )
+  return <BlogArticlePage post={post} />
 }
