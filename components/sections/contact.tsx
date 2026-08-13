@@ -197,7 +197,16 @@ export function ContactSection() {
                     <Phone className="w-4 h-4 text-white/40 group-hover:text-[#E60000] transition-colors" />
                   </div>
                   <span className="font-sans text-[0.9rem] text-white/60 group-hover:text-white/90 transition-colors">
-                    +971 50 889 1686, +971 56 142 5339
+                    +971 50 889 1686
+                  </span>
+                </a>
+
+                <a href="tel:+971561425339" className="flex items-center gap-4 group">
+                  <div className="w-9 h-9 rounded-full bg-white/5 border border-white/5 flex items-center justify-center shrink-0 group-hover:bg-[#E60000]/10 group-hover:border-[#E60000]/30 transition-all">
+                    <Phone className="w-4 h-4 text-white/40 group-hover:text-[#E60000] transition-colors" />
+                  </div>
+                  <span className="font-sans text-[0.9rem] text-white/60 group-hover:text-white/90 transition-colors">
+                    +971 56 142 5339
                   </span>
                 </a>
 
