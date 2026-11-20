@@ -115,7 +115,7 @@ export function BlogArticlePage({ post }: Props) {
                     Get a Free Quote
                   </a>
                   <a
-                    href="https://wa.me/971561425339?text=Hello%2C%20I%20read%20your%20article%20and%20have%20a%20question."
+                    href="https://wa.me/971529842158?text=Hello%2C%20I%20read%20your%20article%20and%20have%20a%20question."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-8 py-4 bg-[#25D366] text-white font-sans text-[0.95rem] font-bold rounded-xl hover:bg-[#1fbe5b] hover:scale-[1.02] transition-all duration-300 shadow-lg shadow-[#25d366]/20"

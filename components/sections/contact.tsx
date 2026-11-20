@@ -104,7 +104,7 @@ export function ContactSection() {
 
     const gmailUrl =
       `https://mail.google.com/mail/?view=cm&fs=1` +
-      `&to=${encodeURIComponent('sales@lampsplusdisplay.com')}` +
+      `&to=${encodeURIComponent('info@lampsplusdisplay.com')}` +
       `&su=${encodeURIComponent(subject)}` +
       `&body=${encodeURIComponent(body)}`
 
@@ -201,17 +201,17 @@ export function ContactSection() {
                   </span>
                 </a>
 
-                <a href="tel:+971561425339" className="flex items-center gap-4 group">
+                <a href="tel:+971529842158" className="flex items-center gap-4 group">
                   <div className="w-9 h-9 rounded-full bg-white/5 border border-white/5 flex items-center justify-center shrink-0 group-hover:bg-[#E60000]/10 group-hover:border-[#E60000]/30 transition-all">
                     <Phone className="w-4 h-4 text-white/40 group-hover:text-[#E60000] transition-colors" />
                   </div>
                   <span className="font-sans text-[0.9rem] text-white/60 group-hover:text-white/90 transition-colors">
-                    +971 56 142 5339
+                    +971 52 984 2158
                   </span>
                 </a>
 
                 <a
-                  href="https://wa.me/971561425339"
+                  href="https://wa.me/971529842158"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 group"
@@ -222,16 +222,16 @@ export function ContactSection() {
                     </svg>
                   </div>
                   <span className="font-sans text-[0.9rem] text-white/60 group-hover:text-white/90 transition-colors">
-                    +971 56 142 5339
+                    +971 52 984 2158
                   </span>
                 </a>
 
-                <a href="mailto:sales@lampsplusdisplay.com" className="flex items-center gap-4 group">
+                <a href="mailto:info@lampsplusdisplay.com" className="flex items-center gap-4 group">
                   <div className="w-9 h-9 rounded-full bg-white/5 border border-white/5 flex items-center justify-center shrink-0 group-hover:bg-[#E60000]/10 group-hover:border-[#E60000]/30 transition-all">
                     <Mail className="w-4 h-4 text-white/40 group-hover:text-[#E60000] transition-colors" />
                   </div>
                   <span className="font-sans text-[0.9rem] text-white/60 group-hover:text-white/90 transition-colors">
-                    sales@lampsplusdisplay.com
+                    info@lampsplusdisplay.com
                   </span>
                 </a>
 
@@ -262,7 +262,7 @@ export function ContactSection() {
 
             {/* WhatsApp CTA */}
             <a
-              href="https://wa.me/971561425339?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20LED%20screens."
+              href="https://wa.me/971529842158?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20LED%20screens."
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-4 bg-[#111111] border border-white/5 rounded-[24px] p-6 hover:border-[#25D366]/30 transition-all duration-300"
@@ -295,7 +295,7 @@ export function ContactSection() {
                 <div>
                   <h3 className="font-serif text-[1.6rem] font-normal text-white mb-3">Gmail Opened!</h3>
                   <p className="font-sans text-[0.95rem] text-white/60 leading-relaxed max-w-md">
-                    A Gmail compose window has opened with your enquiry pre-filled. Just hit <strong className="text-white">Send</strong> and our team at <strong className="text-white">sales@lampsplusdisplay.com</strong> will get back to you within 24 hours.
+                    A Gmail compose window has opened with your enquiry pre-filled. Just hit <strong className="text-white">Send</strong> and our team at <strong className="text-white">info@lampsplusdisplay.com</strong> will get back to you within 24 hours.
                   </p>
                 </div>
                 <a

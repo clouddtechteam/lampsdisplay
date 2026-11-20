@@ -22,13 +22,13 @@ export const siteConfig = {
     "P2 LED screen Dubai"
   ],
   contact: {
-    email: "sales@lampsplusdisplay.com",
-    phone: "+971 56 544 4762, +971 56 142 5339",
-    whatsapp: "+971 56 142 5339",
+    email: "info@lampsplusdisplay.com",
+    phone: "+971 50 889 1686, +971 52 984 2158",
+    whatsapp: "+971 52 984 2158",
     address: "Alquoz industrial area 3 Near Audi Showroom Dubai",
   },
   links: {
-    whatsapp: "https://wa.me/971561425339",
+    whatsapp: "https://wa.me/971529842158",
   }
 }
 

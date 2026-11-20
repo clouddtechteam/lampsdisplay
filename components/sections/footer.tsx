@@ -147,7 +147,7 @@ export function Footer() {
                 Mon–Sat: 8:00 AM – 6:00 PM
               </p>
               <a 
-                              href="https://wa.me/971561425339?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20LED%20screens."
+                              href="https://wa.me/971529842158?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20LED%20screens."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-[#25D366] text-white font-sans text-[0.85rem] font-bold px-4 py-3 rounded-lg hover:bg-[#1da851] hover:-translate-y-[1px] transition-all shadow-md shadow-[#25d366]/20 w-full justify-center"

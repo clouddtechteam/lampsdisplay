@@ -45,7 +45,7 @@ export function FloatingButtons() {
       {/* WhatsApp FAB */}
       <div className="fixed bottom-7 right-7 z-[1000]">
         <a
-          href="https://wa.me/971561425339?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20LED%20screens."
+          href="https://wa.me/971529842158?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20LED%20screens."
           target="_blank"
           rel="noopener noreferrer"
           title="Chat with Aztech LED on WhatsApp"

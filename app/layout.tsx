@@ -118,7 +118,7 @@ export default function RootLayout({
               "image": "https://aztechledscreens.com/images/hero_led_wall_1774782256673.webp",
               "@id": "https://aztechledscreens.com/",
               "url": "https://aztechledscreens.com/",
-              "telephone": "+971 50 889 1686, +971 56 142 5339",
+              "telephone": "+971 50 889 1686, +971 52 984 2158",
               "priceRange": "AED 5,000 - AED 100,000+",
               "address": {
                 "@type": "PostalAddress",
